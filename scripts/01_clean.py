@@ -9,5 +9,5 @@ from sepsis.config import INTERIM, RAW
 INTERIM.mkdir(parents=True, exist_ok=True)
 for name in ("train", "test"):
     df = clean(pd.read_csv(RAW / f"{name}.csv"))
-    df.to_csv(INTERIM / f"clean_{name}.csv", index=False)
+    df.to_csv(INTERIM / f"clean_{name}.csv.gz", index=False)
     print(name, df.shape)
