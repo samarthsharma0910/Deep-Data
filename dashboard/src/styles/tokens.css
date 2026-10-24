@@ -1,0 +1,72 @@
+:root {
+  /* surfaces */
+  --bg: #f3f6fc;
+  --surface: #ffffff;
+  --surface-subtle: #f8faff;
+  --hover: #eef3fd;
+  --border: #e3e9f5;
+  --border-strong: #cbd5e8;
+  --text: #0f1b3d;
+  --text-2: #55627f;
+  --text-3: #8592ad;
+
+  /* brand */
+  --blue: #2563eb;
+  --blue-deep: #1d4ed8;
+  --blue-weak: #dbe7fe;
+  --cyan: #06b6d4;
+  --violet: #7c3aed;
+  --brand-gradient: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  --header-gradient: linear-gradient(120deg, #1d4ed8 0%, #2563eb 45%, #06b6d4 100%);
+  --navy: #0b1a3d;
+  --navy-2: #13275a;
+  --navy-text: #b6c3e4;
+
+  /* status */
+  --alert: #e11d48;
+  --alert-ink: #be123c;
+  --alert-weak: #ffe4ea;
+  --watch: #f59e0b;
+  --watch-ink: #b45309;
+  --watch-weak: #fef3c7;
+  --ok: #10b981;
+  --ok-ink: #047857;
+  --ok-weak: #d1fae5;
+
+  /* aliases used by charts and older rules */
+  --accent: var(--blue);
+  --accent-strong: var(--blue-deep);
+  --accent-weak: var(--blue-weak);
+  --ink: #0f1b3d;
+  --neutral-mark: #94a3b8;
+  --grid: #e6ecf7;
+  --track: #e6ecf7;
+  --hatch: #c3cee4;
+  --alert-deep: #881337;
+
+  /* vital-sign colours */
+  --v-hr: #e11d48;
+  --v-map: #2563eb;
+  --v-temp: #f59e0b;
+  --v-rr: #06b6d4;
+  --v-spo2: #7c3aed;
+
+  /* type */
+  --font: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+
+  /* spacing (4 px grid) */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s6: 24px; --s8: 32px;
+
+  /* shape + elevation */
+  --r-card: 14px;
+  --r-ctl: 8px;
+  --shadow-card: 0 1px 2px rgba(15, 27, 61, 0.05), 0 6px 20px rgba(37, 99, 235, 0.07);
+  --shadow-lift: 0 2px 4px rgba(15, 27, 61, 0.06), 0 12px 28px rgba(37, 99, 235, 0.14);
+  --shadow-float: 0 2px 6px rgba(15, 27, 61, 0.08), 0 14px 36px rgba(15, 27, 61, 0.14);
+
+  --header-h: 56px;
+  --nav-h: 0px;
+  --side-w: 220px;
+  --ease: 160ms ease-out;
+}

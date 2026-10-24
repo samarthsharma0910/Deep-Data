@@ -1,0 +1,96 @@
+{
+  "model": "temporal-hgb",
+  "features": 219,
+  "cv": "5-fold GroupKFold on Patient_ID",
+  "folds": [
+    {
+      "fold": 0,
+      "auroc": 0.8295236934979711,
+      "auprc": 0.13295320624825557
+    },
+    {
+      "fold": 1,
+      "auroc": 0.825275772009844,
+      "auprc": 0.11122093400486455
+    },
+    {
+      "fold": 2,
+      "auroc": 0.8139277652075338,
+      "auprc": 0.11800240238728177
+    },
+    {
+      "fold": 3,
+      "auroc": 0.832230034776118,
+      "auprc": 0.11265558959231042
+    },
+    {
+      "fold": 4,
+      "auroc": 0.8050082269031245,
+      "auprc": 0.10286366636120464
+    }
+  ],
+  "auroc": 0.8206152880925496,
+  "auprc": 0.1137775491499888,
+  "baselineAuprc": 0.021661202785436356,
+  "calibration": {
+    "brierRaw": 0.019244095128799755,
+    "brierCalibrated": 0.018781782217829314,
+    "eceRaw": 0.005522267996800301,
+    "eceCalibrated": 0.0035215394580548447
+  },
+  "calibrationUsed": true,
+  "calibrator": {
+    "method": "platt",
+    "a": 0.802042431024544,
+    "b": -0.6495725276759932
+  },
+  "alertThreshold": 0.07927913322685391,
+  "alertThresholdRule": "maximises F1 on calibrated out-of-fold probabilities",
+  "atThreshold": {
+    "sensitivity": 0.3297097625329815,
+    "specificity": 0.9571999074643118,
+    "precision": 0.1457089552238806,
+    "medianLeadTimeHours": 28.5,
+    "patientsDetected": 502,
+    "sepsisPatients": 991
+  },
+  "thresholdTable": [
+    {
+      "threshold": 0.02,
+      "flaggedShare": 0.2568252792523399,
+      "precision": 0.06122485312444365,
+      "recall": 0.725910290237467
+    },
+    {
+      "threshold": 0.05,
+      "flaggedShare": 0.08364767796478426,
+      "precision": 0.11361338107081363,
+      "recall": 0.4387335092348285
+    },
+    {
+      "threshold": 0.1,
+      "flaggedShare": 0.036569139815919784,
+      "precision": 0.15547636909227308,
+      "recall": 0.2624802110817942
+    },
+    {
+      "threshold": 0.15,
+      "flaggedShare": 0.018449172187701465,
+      "precision": 0.18104089219330854,
+      "recall": 0.1541952506596306
+    },
+    {
+      "threshold": 0.2,
+      "flaggedShare": 0.009983585494881327,
+      "precision": 0.20357224639340507,
+      "recall": 0.09382585751978892
+    },
+    {
+      "threshold": 0.3,
+      "flaggedShare": 0.003063431317412635,
+      "precision": 0.258955223880597,
+      "recall": 0.036622691292875986
+    }
+  ],
+  "fast": false
+}

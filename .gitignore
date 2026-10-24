@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .venv/
 tmp_old/
+notebooks/sepsis_src/
+notebooks/submission.csv
+data/processed/
